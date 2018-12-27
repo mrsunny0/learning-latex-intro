@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+% use a bib package manager via biblatex
+% specify what style (e.g. Nature) 
+%---------------------------------%
+\usepackage[
+	% backend=biber,	% biber is founder (Windows) under: C:\Users\{username}\AppData\Local\Programs\MiKTeX 2.9\miktex\x64\bin\biber.exe
+	backend=bibtex,		% <- texmaker uses bibtex as the backend, need to reconfigure for biber
+	style=nature
+	]{biblatex}
+%---------------------------------%
+
+% add .bib files to use
+%---------------------------------%
+% \addbibresource{bibliographies}
+\bibliography{bibliography}
+%---------------------------------%
+
+\begin{document}
+
+% bibliography managers (which you then export a .bib file from)
+% - zotero
+% - onenote
+% - mendeley
+% - jabref -> LaTeX specific package (http://www.jabref.org/)
+
+% make random citations
+One of the shortest articles \cite{lander1966counterexample} is followed by another citation \cite{ulmer1951protein}. Here is another reference. Sometimes you need to cite more than one \cite{lander1966counterexample,ulmer1951protein,hakkio1986does}
+
+% create bibliographies manually
+% go to google scholar
+% step 1 - find article you want
+% step 2 - click on the quotation mark icon at the bottom of the google entry
+% step 3 - click on the BibTeX link on the bottm
+% step 3 - highlight and copy whatever bib format is shown on the new page
+% step 4 - past beneath a \bibitem entry below
+% step 5 - give the \bibitem a unique name to cite
+% change the bibliography style
+\printbibliography
+
+% to compile
+% 1 - LaTeX
+% 2 - BibTeX (or Biber, if backend is being used)
+% 3 - LaTeX
+
+\end{document}

@@ -1,0 +1,48 @@
+\section{Tables}
+%--------------------------------------------------%
+% use this website to convert excel to latex tables
+% https://www.tablesgenerator.com/
+%--------------------------------------------------%
+% table 1 without borders and all centered
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{ c c c }
+		cell1 & cell2 & cell3 \\ 
+		cell4 & cell5 & cell6 \\  
+		cell7 & cell8 & cell9    
+		\end{tabular}
+	\end{center}	
+	\caption{table (naked)}
+\end{table}
+
+% table 2 with border
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{| c | c | c |}
+			\hline
+			cell1 & cell2 & cell3 \\
+			\hline 
+			cell4 & cell5 & cell6 \\  
+			\hline
+			cell7 & cell8 & cell9 \\
+			\hline    
+		\end{tabular}
+	\end{center}
+	\caption{table (bordered)}	
+\end{table}
+
+% personal opinion: make it pretty
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{ c c c }
+		\toprule
+		heading1 & heading2 & heading 3 \\
+		\midrule		
+		cell1 & cell2 & cell3 \\ 
+		cell4 & cell5 & cell6 \\  
+		cell7 & cell8 & cell9 \\
+		\bottomrule   
+		\end{tabular}
+	\end{center}
+	\caption{table (booktabbed)}	
+\end{table}

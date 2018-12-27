@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\begin{document}
+
+% bibliography managers
+% - zotero
+% - onenote
+% - mendeley
+% - jabref -> LaTeX specific package (http://www.jabref.org/)
+
+% make random citations
+One of the shortest articles \cite{bib_entry1} is followed by a random citation I made \cite{whatever_name_you_want}. Sometimes most references are from the web which you can equally cite \cite{cool_paper_from_web}. Sometimes you need to cite more than one \cite{bib_entry1,whatever_name_you_want,cool_paper_from_web}
+
+% create bibliographies manually
+% go to google scholar
+% step 1 - find article you want
+% step 2 - click on the quotation mark icon at the bottom of the google entry
+% step 3 - highlight and copy whatever bib format is shown in the pop-up
+% step 4 - past beneath a \bibitem entry below
+% step 5 - give the \bibitem a unique name to cite
+% change the bibliography style
+%------------------------%
+\bibliographystyle{plain}
+%------------------------%
+
+\begin{thebibliography}{99} % <- doesn't mean 99 entires, exactly, but the maximum amount of anticipated entries
+\bibitem{bib_entry1}
+Lander, L. J., and T. R. Parkin.``Counterexample to Euler’s conjecture on sums of like powers'' Bull. Amer. Math. Soc 72.6 (1966): 1079.
+
+\bibitem{whatever_name_you_want}
+I just made up my own bibliography format
+
+\bibitem{cool_paper_from_web}
+\url{https://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url}
+
+\end{thebibliography}
+\end{document}
