@@ -11,3 +11,7 @@
 *.xml
 
 *.ini
+
+*-blx*
+*.bcf
+*.dvi

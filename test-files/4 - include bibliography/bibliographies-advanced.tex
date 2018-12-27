@@ -4,7 +4,7 @@
 %---------------------------------%
 \usepackage[
 	% backend=biber,	% biber is founder (Windows) under: C:\Users\{username}\AppData\Local\Programs\MiKTeX 2.9\miktex\x64\bin\biber.exe
-	backend=bibtex,		% <- texmaker uses bibtex as the backend, need to reconfigure for biber
+	backend=bibtex8,	% <- texmaker uses bibtex as the backend, need to reconfigure for biber
 	style=nature
 	]{biblatex}
 %---------------------------------%
@@ -24,6 +24,7 @@
 % - jabref -> LaTeX specific package (http://www.jabref.org/)
 
 % make random citations
+\section*{Adding citations}
 One of the shortest articles \cite{lander1966counterexample} is followed by another citation \cite{ulmer1951protein}. Here is another reference. Sometimes you need to cite more than one \cite{lander1966counterexample,ulmer1951protein,hakkio1986does}
 
 % create bibliographies manually
@@ -41,5 +42,6 @@ One of the shortest articles \cite{lander1966counterexample} is followed by anot
 % 1 - LaTeX
 % 2 - BibTeX (or Biber, if backend is being used)
 % 3 - LaTeX
+% or Quick Build on TexMaker
 
 \end{document}
