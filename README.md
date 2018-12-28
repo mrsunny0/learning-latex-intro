@@ -1,28 +1,71 @@
+# TL;DR
+LaTeX offers superior control over document preparations with the added beautiful visualizations. For those interested, you need to download two components:
+- A LaTeX compiler (such as **MikTeX**)
+- An appropriate text writing document (such as **Texmaker**)
+- The [LaTeX project](https://www.latex-project.org/get/) has information for installation for all operating systems. But! The [video installation guides](#installation) below are easier to follow.
+
+Once you have these components downloaded, there are practice documents to get you started in the [\test-file](https://github.com/mrsunny0/LaTeX-intro/tree/master/test-files) folder in this repo. If you are an MIT student, in particular in the Bioengineering department, you can our other repos to write your thesis [proposal](https://github.com/mrsunny0/LaTeX-thesis-proposal) or [defense](https://github.com/mrsunny0/LaTeX-thesis-defense) documents.
+
+For those who want to _skip a local installation_ of LaTeX, you can use a cloud-based LaTeX enviornment called [Overleaf](https://www.overleaf.com/) which provides all the tools needed to code, compile, and visualize LaTeX. A more detailed describtion can be found [below](#using-).
+
 # Getting started
-There are two fundamental categories for digital document writing. The first is plain text, where formatting is done through code. The second are word processors, documents that hide most to all of the formatting away from the user such that they experience an interface known as WYSIWYG (what you see is that you get), where bolded words are literally bolded on your document.
+![equation](http://latex.codecogs.com/gif.latex?%7B%5CLaTeX%7D) (LaTeX) has been the de-facto scientific writing software for publications in engineering, social sciences, and formal document preparations. LaTeX is a compiled typsetting language, meaning that code such as `\textbf{XYZ}` needs compiled to generate **XYZ**. Whereas, programs such as Word use formatted text, often known as WYSIWYG ("what you see is what you get") where the word processor uses commands from icons and GUI's (graphical user interface) where bolded text are literally bolded in the document.
 
-LaTeX  is one of the more sophisticated types of document writing, plain text using markup tagging to define general structure and code for the document. For example, `\textbf{XYZ}` means to bold *XYZ*. What
-makes LaTeX  an attractive platform for document writing is control and consistency. We will see the power of LaTeX eX as we go further in this README, and hopefully show you the benefits of learning such a powerful word editing tool.
+LaTeX is (in)famously known to give users comprehensive control over their documents, whether that is formatting, text manipulation, graphics, and overall visualization. However, that comes with a rigorous learning curve which programs such as Word have tried to minimize. Below is a table comparing the utility and function of LaTeX versus Word.
 
-## Setting it up
+| LaTeX | Word |
+| --- | --- |
+| Comprehensive control over document style/structure | Document style/structure is fragmented among numerous buttons, icons, and GUIs |
+| Formatting is compiled, which requires an extra step to visualize a document | Changes and formatting are visualized immediately |
+| Figures, captions, and tables can be organized neatly and programmatically | Placing figures, captions, and tables require some manual placement and mouse work |
+| Large documents can be easily broken down in an organized and hierarchical way | Managing large documents can be cumbersome |
+| Overall formatting styles can be adjusted with single line edits in the code | Overall formatting changes are done manually, with ctrl+F and replace, or using the styles tab |
+| LaTeX requires downloading multiple components to run; but is free | Word works out of the box; is not free |  
+
+# Setting it up
 There are two pieces to setting up LaTeX on your local computer
-* A LaTeX  compiler (for either Windows or Mac). This takes what you write, and converts it into a clean and professional document.
-* Optional, although highly recommended, a LaTeX  IDE (integrated development environment) where you can type and compile your code in one software enviornment (much like using Word).
+* A LaTeX  **compiler** (specific for either Windows, Mac, or Linux). \
+  This takes what you write, and converts it into a clean and professional document.
+* A **text editor** to write your code. Highly recommended is to use a LaTeX IDE (integrated development environment) where you can type and compile your code in one software enviornment. A direct analogy is like using Word, where you have access to commands and visuals for rendering your code/document.
 
-## Downloads
+## Installation
 * LaTeX  compiler
 	- PC: [MikTex](https://miktex.org/download)
 	- Mac: [MacTex](http://www.tug.org/mactex/)
+	- LInux: [TeX Live](https://www.tug.org/texlive/)
 * LaTeX  IDE (in order of _my_ preference)
 	- [TeXmaker](http://www.xm1math.net/texmaker/)
 	- [TeXstudio](https://www.texstudio.org/)
 	- [TeXworks](http://www.tug.org/texworks/) (this is automatically installed with most TeX compiler installations)
 
-To avoid a long step-by-step guide on downloading these packages, I will instead refer you to easy to follow online videos, courtesy rof YouTube.
-* For windows: [both MikTex \& Texmaker](https://www.youtube.com/watch?v=WnIYTFTsWiU)
+Downloading the appropriate softwares to get LaTeX running on your computer is straightforward. However, in my experience, many users tend to become dissuaded when they realize they haven't downloaded _all_ of the components, get lost in confusion, and never return to LaTeX without even touching the actual program. To avoid this hassle, please refer to installation videos, courtesy of YouTube.
+
+* For windows: [both MikTex \& Texmaker](https://www.youtube.com/watch?v=yPnfHRE_W_g&t=1056s)
 * For mac: [mactex](https://www.youtube.com/watch?v=XlxiytGeWds) \& [Texmaker](https://www.youtube.com/watch?v=-KgxKA-UBh4)
+* For linux (ubuntu): [both TexLive \& Texmaker](https://www.youtube.com/watch?v=Q2SBoeCJB3Q)
 
-# Things to know (in general) before diving in
-Here are some pointers about, well, computers in general before you get too lost into the world of LaTeX. If you are a computer savant, please go ahead and skip this; but if you are one who needs a mouse to click through your computer and feels lost otherwise, then please read on.
+## Practice
+You can find practice files under [./test-files](https://github.com/mrsunny0/LaTeX-intro/tree/master/test-files) where you can check your installation by running a standard _Hello World_ example, to more advanced topics such as placing figures, tables, and breaking down your document into modular parts.
 
-The first are paths. Typically all operating systems will have a GUI that lets you click through folders to access other folders or files. Much like the PC file explorer below:
+Other links to great tutorials are:
+* LaTeX [Wiki](https://en.wikibooks.org/wiki/LaTeX)
+* Overleaf [tutorials](https://www.overleaf.com/learn/latex/Tutorials)
+* ShareLaTeX [tutorials](https://www.sharelatex.com/blog/latex-guides/beginners-tutorial.html)
+* LaTeX [templates](https://www.latextemplates.com/)
+
+# Using ![overleaf](https://isene.files.wordpress.com/2016/09/overleaf.png?w=125)
+[Overleaf](https://www.overleaf.com) is a great cloud-based tool 
+
+Note that the more fitting name **ShareLaTeX**, a similar platform to Overleaf, has been merged with Overleaf and is no longer developed. So if you do decide to work on a web-based LaTeX platform, mostly all attention is being focused on Overleaf.
+
+| Overleaf (web-based) | Local Installation |
+| --- | --- |
+| Need Wi-Fi | Works anytime |
+| All files, figures, and file structure needs to be uploaded and organized via Overleaf | Control over files and file structure is local; however, you need to be mindful of where your files are stored |
+| No installation required, and Overleaf has comprehensive tools and tutorials for beginners | There is a significant startup cost to getting LaTeX running locally |
+| Documents can be easily shared via url links; however, your documents, figures, and potentially sensitive data will not be private | You maintain your own privacy and sharing |
+| Overleaf may get slower with larger documents, especially with slow internet speeds | Your as fast as your computer allows |
+| Some tools, tricks, and packages are still unavailable in Overleaf | All tools, tricks, and packages are intended to work on local LaTeX distributions |
+
+### Takeaway
+Personally, my opinion is that Overleaf is a great tool for beginners who want to learn and create short documents for classes and assignments. However, for larger documents such as papers, thesis, and sensitive materials such as legal documents should be written via a local installation of LaTeX.
