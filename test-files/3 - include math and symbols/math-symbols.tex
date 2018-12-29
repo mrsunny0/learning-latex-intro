@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+% essential math based packages 
+\usepackage{amsfonts}	% commonly used fonts and symbols in mathematics
+\usepackage{amsmath}	% additional set of math tools on top of LaTeX
+% \usepackage{amssymb}	% common math symbols
+% \usepackage{amsthm}		% theorem based setup following AMS standards
+
+\usepackage[T1]{fontenc}
+ 
+\begin{document}
+
+% remove indentations for entire document
+\setlength\parindent{0pt}
+
+\section{Math enviornments}
+% Introduciont to math enviornments
+%------------------------------------%
+% short cut symbols
+\subsection*{Inline elements}
+\begin{enumerate}
+	\item using \verb!\$...\$!): $a+b=c$ 
+	\item using \verb!\[...\]!): \(a/b=c\) 
+	\item using environment \verb!\begin{math}...\end{math}!): 
+		\begin{math}
+		a - b = c
+		\end{math}
+\end{enumerate}
+
+\subsection*{Blocked elements}
+\begin{enumerate}
+	\item using \verb!$$...$$!: $$ \frac{a}{b}=c $$
+	\item using \verb!\[...\]!: \[ \int^a_b = c\]
+	\item using enviornment \verb!\begin{displaymath}...\end{displaymath}!:
+		\begin{displaymath}
+		\dfrac{\partial a}{\partial	b} = c
+		\end{displaymath}
+\end{enumerate}
+
+\subsection*{Alignments \& numberings}
+\begin{enumerate}
+	\item Numbered equations
+	\begin{equation}
+		\text{KE} = 1/2mv^2
+	\end{equation}
+	
+	\item No numbered equations (\* trick, similar to section numberings)
+	\begin{equation*}
+		\text{PE} = \int_{\text{ref}}^{x} F \operatorname{d}\!\overrightarrow{x}
+	\end{equation*}	
+	
+	\item Numbered equations (not aligned)
+	\begin{gather}
+		\exp^{ix} = \cos{x} + i\sin(x) \\
+		\exp^{i\pi} + 1 = 0
+	\end{gather}
+	
+	\item Numbered and aligned
+	\begin{align}
+		\nabla \cdot \vec{D} &= \rho_v \\
+		\nabla \cdot \vec{B} &= 0 \\
+		\nabla \times \vec{E} &= - \frac{\partial B}{\partial t} \\
+		\nabla \times \vec{B} &= \mu_{0}\vec{J} +
+		\mu_{0}\epsilon_{0}\frac{\partial E}{\partial t}
+	\end{align}
+	
+	\item Controlling numbering and alignment
+	\begin{align}
+		&\nabla \cdot \vec{D} = \rho_v \nonumber \\
+		&\nabla \cdot \vec{B} = 0 \\
+		&\nabla \times \vec{E} = - \frac{\partial B}{\partial t} \\
+		&\nabla \times \vec{B} = \mu_{0}\vec{J} +
+		\mu_{0}\epsilon_{0}\frac{\partial E}{\partial t} \nonumber
+	\end{align}
+\end{enumerate}
+
+%------------------------------------%
+
+\section{Symbols}
+
+\subsection*{Greek symbols}
+Note that greek symbols that can be represented by english letters such as \verb!\Alpha! and \verb!\Chi! do not exists, as their symbols $A$ and $X$ are indistinguishable from using letters \verb!$A$! and \verb!$X$!. However, some packages override this behavior, so please check what math packages you import.
+
+$$\alpha, A, \beta, B, \gamma, \Gamma, \delta, \Delta ...\, \mu, \nu $$
+
+\subsection*{Equation symbols}
+
+\section{Spacing}
+
+
+\end{document}

@@ -1,7 +1,7 @@
 # TL;DR
 LaTeX offers superior control over document preparations with the added beautiful visualizations. For those interested, you need to download two components:
 - A LaTeX compiler (such as **MikTeX**)
-- An appropriate text writing document (such as **Texmaker**)
+- An appropriate text editing document (such as **Texmaker**)
 - The [LaTeX project](https://www.latex-project.org/get/) has information for installation for all operating systems. But! The [video installation guides](#installation) below are easier to follow.
 
 Once you have these components downloaded, there are practice documents to get you started in the [\test-file](https://github.com/mrsunny0/LaTeX-intro/tree/master/test-files) folder in this repo. If you are an MIT student, in particular in the Bioengineering department, you can our other repos to write your thesis [proposal](https://github.com/mrsunny0/LaTeX-thesis-proposal) or [defense](https://github.com/mrsunny0/LaTeX-thesis-defense) documents.
@@ -54,9 +54,9 @@ Other links to great tutorials are:
 * LaTeX [templates](https://www.latextemplates.com/)
 
 # Using ![overleaf](https://isene.files.wordpress.com/2016/09/overleaf.png?w=125)
-[Overleaf](https://www.overleaf.com) is a great cloud-based tool 
+[Overleaf](https://www.overleaf.com) is a great cloud-based tool where the overhead for installing, compiling, and arranging your LaTeX files are done via a web-app. The Overleaf platform is very popular for its user-friendly interface, and as an educational tool to familiarize students with LaTeX code without bogging them down with operating system and computer specific installations and paths. 
 
-Note that the more fitting name **ShareLaTeX**, a similar platform to Overleaf, has been merged with Overleaf and is no longer developed. So if you do decide to work on a web-based LaTeX platform, mostly all attention is being focused on Overleaf.
+Note that the more fitting name **ShareLaTeX**, a similar platform to Overleaf, has been merged with Overleaf and is no longer developed. So if you do decide to work on a web-based LaTeX platform, mostly all attention is being focused on Overleaf. Given Overleaf's popularity as a web-based LaTeX platfrorm, it does come with benefits and setbacks versus a traditional local (personal) installed platform.
 
 | Overleaf (web-based) | Local Installation |
 | --- | --- |
