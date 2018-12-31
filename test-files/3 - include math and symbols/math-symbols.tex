@@ -3,10 +3,20 @@
 % essential math based packages 
 \usepackage{amsfonts}	% commonly used fonts and symbols in mathematics
 \usepackage{amsmath}	% additional set of math tools on top of LaTeX
-% \usepackage{amssymb}	% common math symbols
-% \usepackage{amsthm}		% theorem based setup following AMS standards
+\usepackage{amssymb}	% common math symbols
+\usepackage{amsthm}	% theorem based setup following AMS standards
 
 \usepackage[T1]{fontenc}
+
+\usepackage{multicol}
+ 
+\usepackage{hyperref} 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
  
 \begin{document}
 
@@ -19,13 +29,14 @@
 % short cut symbols
 \subsection*{Inline elements}
 \begin{enumerate}
-	\item using \verb!\$...\$!): $a+b=c$ 
-	\item using \verb!\[...\]!): \(a/b=c\) 
+	\item using \verb!$...$!: $a+b=c$ 
+	\item using \verb!\[...\]!: \(a/b=c\) 
 	\item using environment \verb!\begin{math}...\end{math}!): 
 		\begin{math}
 		a - b = c
 		\end{math}
 \end{enumerate}
+Takeaway: Although there are said to be issues, or incompatibilities with using \verb!$...$!, most examples and working code use this shorthand for inline math. If for whatever reason you do find issues, then use \verb!\(...\)!.
 
 \subsection*{Blocked elements}
 \begin{enumerate}
@@ -36,6 +47,7 @@
 		\dfrac{\partial a}{\partial	b} = c
 		\end{displaymath}
 \end{enumerate}
+Takeaway: Much like for inline math, \verb!$$...$$! is commonly used. However, if you do find issues (which rarely does), then use \verb!\[...\]!. 
 
 \subsection*{Alignments \& numberings}
 \begin{enumerate}
@@ -44,7 +56,7 @@
 		\text{KE} = 1/2mv^2
 	\end{equation}
 	
-	\item No numbered equations (\* trick, similar to section numberings)
+	\item No numbered equations ({\*}trick, similar to section numberings)
 	\begin{equation*}
 		\text{PE} = \int_{\text{ref}}^{x} F \operatorname{d}\!\overrightarrow{x}
 	\end{equation*}	
@@ -73,6 +85,7 @@
 		\mu_{0}\epsilon_{0}\frac{\partial E}{\partial t} \nonumber
 	\end{align}
 \end{enumerate}
+Takeaway: All environments can use the \* trick to suppress numbering, or \verb!\nonumber! can do this specifically per line. Although not shown in this demonstration, if equations get too long, or multiple equations should be given 1 equation number (such as an \textit{if/else} statement), use the \verb!\begin{split}! or \verb!\begin{multiline}! environments.
 
 %------------------------------------%
 
@@ -84,8 +97,22 @@ Note that greek symbols that can be represented by english letters such as \verb
 $$\alpha, A, \beta, B, \gamma, \Gamma, \delta, \Delta ...\, \mu, \nu $$
 
 \subsection*{Equation symbols}
+You have control over all types of symbols relevant to mathematical, and even graphical representation. To get an extensive list please look \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_mathematical_symbols}{here}.
+
+\subsection*{Formatting mathematical symbols}
+Some equations need more than a simple definition or symbol. Some symbols can be compounded to make more complex statements. For example
+$$
+\overrightarrow{\sum_{i=\iiint}^{j={\widehat{AAA}}}}
+$$
+A more comprehensive discussion on this topic, and how to customize the look can be found \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics#Formatting_mathematics_symbols}{here}.
 
 \section{Spacing}
+Horizontal spacing is dictated by the document class font size (e.g. 11pt, 12pt, etc.) and is measured by \textit{em} which is roughly proportional to the horizontal width of a capital M. To artificially create 1 em width is to use \verb!\quad!. See: \\
+
+\indent A{\quad}B\\
+\indent AMB (... a little bit more than M)\\
+
+Knowing this, there are many commands such as \verb!\,! \verb!\:! that create fractions of \verb!\quad!. The variety of commands for horizontal spacing in normal and math mode can be found \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics#Controlling_horizontal_spacing}{here}. There is also a discussion on which \href{https://tex.stackexchange.com/questions/41476/lengths-and-when-to-use-them}{spacing is appropriate}.
 
 
 \end{document}
